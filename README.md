@@ -79,7 +79,7 @@ python main.py
 
 The first window is the video selector:
 
-- Arrow keys: move through videos.
+- Up and Down arrow keys: move through videos.
 - `Space`: mark or unmark a video.
 - `Enter`: play marked videos, or the highlighted video.
 - `A`: play all videos.
@@ -90,6 +90,8 @@ During detection playback:
 - `Space`: pause or resume.
 - `N`: next video.
 - `P`: previous video.
+- `-`: decrease playback speed.
+- `+` or `=`: increase playback speed.
 - `Q`: exit.
 
 ## Output
@@ -104,4 +106,3 @@ The application writes:
 - The OCR confidence threshold is intentionally conservative. A weak plate reading is not used to create a Re-ID, which avoids false vehicle matches.
 - Re-IDs are matched by accepted plate text during one program run. A persistent database is the next step for retaining vehicle identities across separate runs.
 - OCR quality depends heavily on the plate size, angle, blur, lighting, and whether the detection model was trained for the country or plate style in the source videos.
-

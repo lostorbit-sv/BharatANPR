@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# Caches and virtual environments
+venv/
+env/
+.env
+.cache/
+
+# Datasets and raw downloads (exceeds GitHub file size limit)
+dataset/
+data/
+*.tar
+*.zip
+*.incomplete
+
+# Intermediate training runs and checkpoints
+runs/
+weights/
+*.cache
+
+# Video files and raw outputs (prevent exceeding GitHub 100MB limit)
+videos/
+*.mp4
+*.webm
+*.avi
+*.mov
+*.mkv
+outputs/plate_crops/
+outputs/unique_vehicles_*.csv
+
+# External repos and heavy model caches
+Indian_LPR/
+ocr_models/craft_mlt_25k.pth
+
+# System and editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+WATCH_TRAINING.bat
+*.log
+
